@@ -1,0 +1,58 @@
+NAME
+
+    IO::File::String - load/save whole file as single string
+
+DESCRIPTION
+
+    Simple interface to enable load/save the whole file as single scalar
+    string.
+
+    It is subclass of IO::File so that all methods are inherited (including
+    the 'new' method).
+
+SYNOPSIS
+
+     my $sfh = IO::File::String->new( '< my-file.txt' );
+     $sfh->load( my $str )->close;
+     ...
+     my $str =  'test string';
+     my $sfh = IO::File::String->new( '> my-file.txt' );
+     $sfh->save( $str )->close;
+ 
+METHODS
+
+     load
+         $fh->load( my $string );
+ 
+        Load the whole file into $string.
+
+     save
+         $fh->save( $string );
+ 
+        Save the whole $string into file.
+
+FILES
+
+    none
+
+REVISION
+
+     project started: 2004/01/09
+
+     $Id: String.pm_rev 1.3 2004/01/09 18:31:44 root Exp root $
+
+AUTHOR
+
+     Daniel Peder, Daniel.Peder@Infoset.COM
+ 
+     http://www.Infoset.COM
+
+SEE ALSO
+
+    IO::File IO::Handle IO::Seekable
+
+NOTE
+
+    'Out of memory' could occur on large files because the whole file is
+    allways tried to put in memory without size checking.
+
