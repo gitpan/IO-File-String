@@ -44,16 +44,7 @@ are inherited (including the 'new' method).
 # SECTION: version
 #
 
-	use vars qw( $VERSION $VERSION_LABEL $REVISION $REVISION_DATETIME $REVISION_LABEL $PROG_LABEL );
-
-	$VERSION           = '0.10';
-	
-	$REVISION          = (qw$Revision: 1.3 $)[1];
-	$REVISION_DATETIME = join(' ',(qw$Date: 2004/01/09 18:31:44 $)[1,2]);
-	$REVISION_LABEL    = '$Id: String.pm_rev 1.3 2004/01/09 18:31:44 root Exp root $';
-	$VERSION_LABEL     = "$VERSION (rev. $REVISION $REVISION_DATETIME)";
-	$PROG_LABEL        = __PACKAGE__." - ver. $VERSION_LABEL";
-
+	$IO::File::String::VERSION = '0.11';
 
 # --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 #

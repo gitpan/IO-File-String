@@ -1,10 +1,11 @@
 # http://module-build.sourceforge.net/META-spec.html
 #XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
 name:         IO-File-String
-version:      0.10
+version:      0.11
 version_from: String.pm
 installdirs:  site
 requires:
+    IO::File:                      1.08
     Test::Easy:                    0
 
 distribution_type: module

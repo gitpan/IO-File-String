@@ -10,6 +10,7 @@ WriteMakefile(
     'PREREQ_PM'      => 
 	                    { # e.g., Module::Name => 1.1
 							Test::Easy    => 0,
+							IO::File      => 1.08,
 						},
     ($] >= 5.005 ? (
       ABSTRACT_FROM  => 'String.pm', 
